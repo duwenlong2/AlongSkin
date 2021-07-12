@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Along="clr-namespace:AlongSkin.Controls.Metro">
+    <DropShadowEffect x:Key="TextShadow-Black"
+                      BlurRadius="6" Opacity="0.2" ShadowDepth="0" Color="#000000"/>
+    <SolidColorBrush x:Key="Brush" Color="#EE796F"/>
+    <SolidColorBrush x:Key="DefaultBrush" Color="#EE796F" />
+
+    <Style x:Key="BaseStyle" TargetType="Control">
+        <Setter Property="Foreground" Value="{DynamicResource Brush}"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+
+    <Geometry x:Key="Icon_SysMin">F1M0,6L0,9 9,9 9,6 0,6z</Geometry>
+    <Geometry x:Key="Icon_SysMax">F1M0,0L0,9 9,9 9,0 0,0 0,3 8,3 8,8 1,8 1,3z</Geometry>
+    <Geometry x:Key="Icon_SysRestore">F1M0,10L0,3 3,3 3,0 10,0 10,2 4,2 4,3 7,3 7,6 6,6 6,5 1,5 1,10z M1,10L7,10 7,7 10,7 10,2 9,2 9,6 6,6 6,9 1,9z</Geometry>
+    <Geometry x:Key="Icon_SysClose">M453.44 512L161.472 220.032a41.408 41.408 0 0 1 58.56-58.56L512 453.44 803.968 161.472a41.408 41.408 0 0 1 58.56 58.56L570.56 512l291.968 291.968a41.408 41.408 0 0 1-58.56 58.56L512 570.56 220.032 862.528a41.408 41.408 0 0 1-58.56-58.56L453.44 512z</Geometry>
+    <Geometry x:Key="Icon_Checked2">M423.896615 751.812923c-7.876923 0-15.753846-3.938462-19.692307-7.876923l-220.553846-200.861538c-11.815385-11.815385-11.815385-31.507692 0-43.323077 11.815385-11.815385 31.507692-11.815385 43.323076 0l200.861539 181.16923 393.846154-401.723077c11.815385-11.815385 31.507692-11.815385 43.323077 0 11.815385 11.815385 11.815385 31.507692 0 43.323077l-413.538462 421.415385c-11.815385 7.876923-19.692308 7.876923-27.569231 7.876923z</Geometry>
+
+</ResourceDictionary>

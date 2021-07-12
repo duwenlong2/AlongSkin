@@ -1,0 +1,42 @@
+﻿<Metro:MetroWindow x:Class="AlongSkin.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Metro="clr-namespace:AlongSkin.Controls.Metro;assembly=AlongSkin"
+        xmlns:AlongAttach="clr-namespace:AlongSkin.Controls.Attach;assembly=AlongSkin"
+        xmlns:local="clr-namespace:AlongSkin.Demo"
+        mc:Ignorable="d" BorderThickness="0"
+         Icon="/ALongSkin;component/Resources/logo.ico"
+                   x:Name="mainWindow"  
+        Title="MainWindow" Height="450" Width="800" DataContext="{Binding ElementName=mainWindow}">
+    <Metro:MetroWindow.Menu> 
+        <Metro:MetroTitleMenu Height="40">
+            <Metro:MetroTitleMenuItem Header="联系"  AlongAttach:BorderElement.CornerRadius="2">
+                <Metro:MetroMenuItem Header="博客园"/>
+
+            </Metro:MetroTitleMenuItem>
+            <Metro:MetroTitleMenuItem Header="测试"  AlongAttach:BorderElement.CornerRadius="2">
+                <Metro:MetroMenuItem Header="博客园"/>
+                <MenuItem  Style="{StaticResource MenuItem_NonStyle}"  Height="30">
+                    <MenuItem.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Margin="33,0,16,0" Text="主题色" VerticalAlignment="Center"/>
+                            <Button Content="fff"/>
+
+                               </Grid>
+                    </MenuItem.Header>
+                </MenuItem>
+            </Metro:MetroTitleMenuItem>
+        </Metro:MetroTitleMenu>
+
+    </Metro:MetroWindow.Menu>
+    <Grid>
+        <Metro:MetroColorPicker Grid.Column="1" x:Name="Theme" Width="20" Height="20" Background="{StaticResource DefaultBrush}" DefaultColor="{StaticResource DefaultBrush}" />
+        </Grid>
+  
+</Metro:MetroWindow>
